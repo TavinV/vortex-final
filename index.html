@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex</title>
+    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header id="header">
+        <div class="header-contents">
+            <div class="logo-container">
+                <img class="logo" src="img/logo.svg" >
+                <h1>Vortex</h1>
+            </div>
+            
+            <div class="searchbar">
+                <input placeholder="O que você procura?" type="text">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <div class="header-links">
+                <a href="#"><img src="img/foto de perfil.png"></a>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+            <div class="responsive-buttons">
+                <button onclick="abrir_menu()" class="menu">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <button onclick="abrir_search()" class="menu">
+                    <i class='bx bx-search'></i>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <a class="mobile-only-links perfil-link" href="#"><img src="img/foto de perfil.png"></a>
+                <a class="mobile-only-links cart-link" href="#"><i class='bx bx-cart-alt'></i></a>
+                <a class="current-page" href="">Home</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="quemsomos.html">Sobre nós</a>
+                <a class="catalog-item-a" href="catalogo.html"><strong>Vortex Exclusive</strong></a>
+                <a class="catalog-item-a" href="catalogo.html">Tênis</a>
+                <a class="catalog-item-a" href="catalogo.html">Joelheiras</a>
+                <a class="catalog-item-a" href="catalogo.html">Órteses</a>
+                <a class="catalog-item-a" href="catalogo.html">Manguitos</a>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-banner">
+            <div class="banner-img-slider">
+                <a href="">
+                    <img id="banner-slider-1" src="img/banner/banner1.png" alt="">
+                </a>
+                <a href="">
+                    <img id="banner-slider-2" src="img/banner/Inserir um título (1920 x 400 px).png" alt="">
+                </a>
+            </div>
+
+            <div class="banner-nav">
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </section>
+        
+        <section class="products">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#1C1C2D" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+            <div class="title">
+                <h1>Encontre de tudo na <span class="vrtx_span">Vortex</span></h1>
+            </div>
+            <div class="list-products">
+
+            <!-- PRODUTO -->
+            <div class="product-card">
+                <div class="card-header">
+                    <img src="img/produtos/camisapraiagrande.png" alt="Joelheiras esportivas" class="product-image">
+                    <button class="favorite-button">★</button>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-info">
+                        <h2>Camisa Praia Grande</h2>
+                        <h3>R$ 59,90</h3>
+                    </div>
+                    
+                    <div class="options">
+                        <span>
+                            Frete Grátis
+                            <i class='bx bxs-package'></i>
+                        </span>
+                        <span>
+                            2 Cores disponíveis
+                            <i class='bx bxs-color'></i>
+                        </span>
+                    </div>
+                </div>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+            <!-- PRODUTO -->
+             <div class="product-card">
+                <div class="card-header">
+                    <img src="img/produtos/bauerfeind.jpg" alt="Joelheiras esportivas" class="product-image">
+                    <button class="favorite-button">★</button>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-info">
+                        <h2>Joelheira ortopédica Bauerfeind</h2>
+                        <h3>R$ 890,90</h3>
+                    </div>
+                    
+                    <div class="options">
+                        <span>
+                            Frete Grátis
+                            <i class='bx bxs-package'></i>
+                        </span>
+                        <span>
+                            4 Cores disponíveis
+                            <i class='bx bxs-color'></i>
+                        </span>
+                    </div>
+                </div>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+            <!-- PRODUTO -->
+            <!-- PRODUTO -->
+             <div class="product-card vrtx-exclusive">
+                <div class="card-header">
+                    <h4>Exclusividade Vortex</h4>
+                    <img src="img/produtos/wow10.webp" alt="Joelheiras esportivas" class="product-image">
+                    <button class="favorite-button">★</button>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-info">
+                        <h2>Tênis de vôlei Vortex Wave</h2>
+                        <h3>R$ 680,69</h3>
+                    </div>
+                    
+                    <div class="options">
+                        <span>
+                            <b>Cloud 9</b>
+                            <i class='bx bxs-cloud'></i>
+                        </span>
+                        <span>
+                            1 Cores disponíveis
+                            <i class='bx bxs-color'></i>
+                        </span>
+                    </div>
+                </div>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+            <!-- PRODUTO -->
+             <div class="product-card">
+                <div class="card-header">
+                    <img src="img/produtos/camisa.jpg" alt="Joelheiras esportivas" class="product-image long">
+                    <button class="favorite-button">★</button>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-info">
+                        <h2>Camisa Sesc Flamengo</h2>
+                        <h3>R$ 299,99</h3>
+                    </div>
+                    
+                    <div class="options">
+                        <span>
+                            Frete Grátis
+                            <i class='bx bxs-package'></i>
+                        </span>
+                        <span>
+                            1 Cores disponíveis
+                            <i class='bx bxs-color'></i>
+                        </span>
+                    </div>
+                </div>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+            <!-- PRODUTO -->
+             <div class="product-card">
+                <div class="card-header">
+                    <img src="img/produtos/combo-n1.webp" alt="Joelheiras esportivas" class="product-image">
+                    <button class="favorite-button">★</button>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-info">
+                        <h2>Combo N1 - Preto</h2>
+                        <h3>R$ 319,75</h3>
+                    </div>
+                    
+                    <div class="options">
+                        <span>
+                            Frete Grátis
+                            <i class='bx bxs-package'></i>
+                        </span>
+                        <span>
+                            2 Cores disponíveis
+                            <i class='bx bxs-color'></i>
+                        </span>
+                    </div>
+                </div>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+            <!-- PRODUTO -->
+            <!-- PRODUTO -->
+             <div class="product-card">
+                <div class="card-header">
+                    <img src="img/produtos/camisa-sadacruzeiro.jpg" alt="Joelheiras esportivas" class="product-image">
+                    <button class="favorite-button">★</button>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-info">
+                        <h2>Camisa Sada Cruzeiro</h2>
+                        <h3>R$ 59,90</h3>
+                    </div>
+                    
+                    <div class="options">
+                        <span>
+                            Frete Grátis
+                            <i class='bx bxs-package'></i>
+                        </span>
+                        <span>
+                            2 Cores disponíveis
+                            <i class='bx bxs-color'></i>
+                        </span>
+                    </div>
+                </div>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+            <!-- PRODUTO -->
+            <!-- PRODUTO -->
+             <div class="product-card">
+                <div class="card-header">
+                    <img src="img/produtos/joelheiran1.jpg" alt="Joelheiras esportivas" class="product-image">
+                    <button class="favorite-button">★</button>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-info">
+                        <h2>Joelheiras N1 SPRY</h2>
+                        <h3>R$ 239,90</h3>
+                    </div>
+                    
+                    <div class="options">
+                        <span>
+                            Frete Grátis
+                            <i class='bx bxs-package'></i>
+                        </span>
+                        <span>
+                            2 Cores disponíveis
+                            <i class='bx bxs-color'></i>
+                        </span>
+                    </div>
+                </div>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+            <!-- PRODUTO -->
+             <div class="product-card">
+                <div class="card-header">
+                    <img src="img/produtos/hyperset.jpeg" alt="Joelheiras esportivas" class="product-image">
+                    <button class="favorite-button">★</button>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-info">
+                        <h2>Tênis Nike React Hyperset</h2>
+                        <h3>R$ 1230,10</h3>
+                    </div>
+                    
+                    <div class="options">
+                        <span style="border-color: red; color: red;">
+                            Ultimas unidades
+                            <i class='bx bxs-hot' ></i>
+                        </span>
+                        <span>
+                            1 Cores disponíveis
+                            <i class='bx bxs-color'></i>
+                        </span>
+                    </div>
+                </div>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+           
+            
+        </div>
+        <div class="catalog-container">
+            <a href="">Catálogo completo</a>
+        </div>
+    </section>
+
+    <section class="vortex-exclusive">
+        <h1>Exclusividades <span class="vrtx_span">Vortex</span></h1>
+
+        <div class="products-grid">
+
+            <div class="vrtx-product-card">
+                
+                <div class="img-container">
+                    <img src="img/produtos/wow12.avif" alt="">
+                </div>
+
+                <div class="vrtx-product-info">
+                    <div class="top">
+                        <h1>Tênis Vortex Wave</h1>
+                        <h2>"Domine a quadra"</h2>
+                    </div>
+                    <div class="mid">
+                        <h2>R$ 680,69</h2>
+                        <span class="caracteristicas">
+                            <strong> Cloud 9 <i class='bx bxs-cloud'></i></strong>
+                            
+                        </span>
+                        <span class="caracteristicas">
+                            8 Cores disponíveis
+                        </span>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vrtx-product-card">
+                
+                <div class="img-container">
+                    <img src="img/produtos/Group 50.png" alt="">
+                </div>
+
+                <div class="vrtx-product-info">
+                    <div class="top">
+                        <h1>Estabilizador de tornozelo Vortex defender</h1>
+                        <h2>"Jogue sem medo"</h2>
+                    </div>
+                    <div class="mid">
+                        <h2>R$ 420,90</h2>
+                        <span class="caracteristicas">
+                            <strong>Ultraleve <i class='bx bxs-zap'></i></strong>
+                            
+                        </span>
+                        <span class="caracteristicas">
+                            8 Cores disponíveis
+                        </span>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+
+    </main>
+        <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <span class="footer-logo">
+                    <img src="img/logo.svg" alt="Logo Vortex" >
+                    <h2>Vortex</h2>
+                </span>
+                <p>Voe sem limites</p>
+                <p class="formas-pagamento">Formas de pagamento</p>
+                <div class="payment-methods">
+                    <img src="img/pix-106.svg" alt="pix">
+                    <img src="img/boleto.png" alt="boleto">
+                    <img src="img/Mastercard-logo.svg" alt="mastercard">
+                    <img src="img/Visa_Inc._logo.svg" alt="visa">
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Ajuda e atendimento</h3>
+                <ul>
+                    <li><a href="#">Acompanhe o seu pedido</a></li>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Troca e arrependimento</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Políticas e regulamentos</h3>
+                <ul>
+                    <li><a href="#">Termos e condições</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Política de troca e arrependimento</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Vortex Ltda. Copyright 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        function abrir_menu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+        function abrir_search() {
+            const searchbar = document.querySelector('.searchbar');
+            searchbar.classList.toggle('active');
+        }
+
+        const bannerSlider = document.querySelector('.banner-img-slider');
+    const banners = document.querySelectorAll('.banner-img-slider img');
+    const navLinks = document.querySelectorAll('.banner-nav a');
+
+    let currentIndex = 0; // Começa no primeiro banner
+    const bannerCount = banners.length; // Número total de banners
+    const transitionTime = 10000; // Tempo de transição (10 segundos)
+
+    // Função para alternar os banners
+    function switchBanner(index) {
+        // Calcula a posição horizontal do banner atual
+        const bannerWidth = bannerSlider.clientWidth;
+
+        // Rola suavemente para o banner correspondente
+        bannerSlider.scrollTo({
+            left: index * bannerWidth,
+            behavior: 'smooth'
+        });
+
+        // Atualiza o estado dos pontos de navegação
+        navLinks.forEach((link, i) => {
+            link.style.backgroundColor = i === index ? '#999' : '#ccc';
+        });
+    }
+
+    // Alternância automática com intervalo
+    function startAutoSwitch() {
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % bannerCount; // Alterna para o próximo banner, retornando ao primeiro no final
+            switchBanner(currentIndex);
+        }, transitionTime);
+    }
+
+    // Inicia o foco inicial e o intervalo automático
+    switchBanner(currentIndex);
+    startAutoSwitch();
+
+    // Adiciona navegação manual
+    navLinks.forEach((link, index) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // Evita o comportamento padrão
+            currentIndex = index; // Atualiza o índice atual
+            switchBanner(currentIndex); // Alterna para o banner clicado
+        });
+    });
+
+    </script>
+    
+</body>
+</html>

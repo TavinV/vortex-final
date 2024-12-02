@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex</title>
+    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="css/quemsomos.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header id="header">
+        <div class="header-contents">
+            <div class="logo-container">
+                <img class="logo" src="img/logo.svg" >
+                <h1>Vortex</h1>
+            </div>
+            
+            <div class="searchbar">
+                <input placeholder="O que você procura?" type="text">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <div class="header-links">
+                <a href="#"><img src="img/foto de perfil.png"></a>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+            <div class="responsive-buttons">
+                <button onclick="abrir_menu()" class="menu">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <button onclick="abrir_search()" class="menu">
+                    <i class='bx bx-search'></i>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <a class="mobile-only-links perfil-link" href="#"><img src="img/foto de perfil.png"></a>
+                <a class="mobile-only-links cart-link" href="#"><i class='bx bx-cart-alt'></i></a>
+                <a class="current-page" href="index.html">Home</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="quemsomos.html">Sobre nós</a>
+                <a class="catalog-item-a" href=""><strong>Vortex Exclusive</strong></a>
+                <a class="catalog-item-a" href="">Tênis</a>
+                <a class="catalog-item-a" href="">Joelheiras</a>
+                <a class="catalog-item-a" href="">Órteses</a>
+                <a class="catalog-item-a" href="">Manguitos</a>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+    <section class="intro">
+        <div class="text-container">
+            <h1 class="title">Quem é a Vortex?</h1>
+            <p class="description">
+                A Vortex é uma marca dedicada ao universo do vôlei. Somos movidos pela paixão pelo esporte e pelo compromisso de fornecer produtos de alta qualidade que atendem tanto atletas amadores quanto profissionais. Com foco em inovação e desempenho, a Vortex busca ser uma referência para todos que compartilham o amor pelo vôlei, criando soluções que elevam a experiência dentro e fora das quadras.
+            </p>
+        </div>
+        <img class="image" src="img/Adriano quinadeira.avif" alt="Imagem de vôlei em ação">
+    </section>
+    
+    <section class="vision">
+        <img class="image" src="img/giba.webp" alt="Imagem de atleta em treino">
+        <div class="text-container">
+            <h2 class="subtitle">Nossa Visão</h2>
+            <p class="description">
+                Ser a principal referência no mercado de vôlei, reconhecida pela qualidade e inovação dos nossos produtos, e pelo compromisso em oferecer soluções que inspirem e elevem o desempenho de atletas em todos os níveis, promovendo a paixão pelo esporte em cada detalhe.
+            </p>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="text-container">
+            <h2 class="subtitle">Entre em Contato Conosco</h2>
+            <p class="description">
+                Tem dúvidas ou quer saber mais sobre nossos produtos? Fique à vontade para nos enviar uma mensagem. Estamos aqui para ajudar!
+            </p>
+        </div>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" id="name" class="form-input" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" class="form-input" placeholder="Seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea id="message" class="form-input" placeholder="Escreva sua mensagem..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </section>
+
+</main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <span class="footer-logo">
+                    <img src="img/logo.svg" alt="Logo Vortex" >
+                    <h2>Vortex</h2>
+                </span>
+                <p>Voe sem limites</p>
+                <p class="formas-pagamento">Formas de pagamento</p>
+                <div class="payment-methods">
+                    <img src="img/pix-106.svg" alt="pix">
+                    <img src="img/boleto.png" alt="boleto">
+                    <img src="img/Mastercard-logo.svg" alt="mastercard">
+                    <img src="img/Visa_Inc._logo.svg" alt="visa">
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Ajuda e atendimento</h3>
+                <ul>
+                    <li><a href="#">Acompanhe o seu pedido</a></li>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Troca e arrependimento</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Políticas e regulamentos</h3>
+                <ul>
+                    <li><a href="#">Termos e condições</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Política de troca e arrependimento</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Vortex Ltda. Copyright 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        function abrir_menu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+        function abrir_search() {
+            const searchbar = document.querySelector('.searchbar');
+            searchbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
